@@ -4,7 +4,7 @@ from transformers import set_seed
 from transformers import AutoModelForSequenceClassification
 set_seed(42)
 
-# python3 avg_merging.py --ckpts agnews_badnet/num_epochs-tk128-3/checkpoint-22500 agnews_lws/num_epochs-tk128-3/checkpoint-22500 --save_path save.pth
+# python3 wag.py --ckpts agnews_badnet/num_epochs-tk128-3/checkpoint-22500 agnews_lws/num_epochs-tk128-3/checkpoint-22500 --save_path save.pth
 
 def average_state_dicts(state_dicts):
     # Check if the input list is not empty
